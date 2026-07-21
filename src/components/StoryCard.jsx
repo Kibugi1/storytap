@@ -2,6 +2,7 @@ import { Box, Typography, Stack } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import ProgressDots from "./ProgressDots";
 
+
 export default function StoryCard({ scene, current, total }) {
     return (
         <Box
@@ -31,7 +32,6 @@ export default function StoryCard({ scene, current, total }) {
                         <Typography variant="h1">
                             {scene.text}
                         </Typography>
-
                         <ProgressDots
                             total={total}
                             current={current}

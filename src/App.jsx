@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Box } from "@mui/material";
 
 import StoryCard from "./components/StoryCard";
@@ -23,7 +23,6 @@ export default function App() {
       setTimeout(() => {
         setIsTransitioning(false);
       }, 150);
-
     }, 200);
   };
 
