@@ -10,7 +10,7 @@ const story = [
 
     {
         id: 2,
-        text: "Today isn't just another day.",
+        text: "Some days deserve to be remembered.",
         background: {
             from: "#F5F9FF",
             to: "#EAF5FF",
@@ -46,7 +46,8 @@ const story = [
 
     {
         id: 6,
-        text: "The one who keeps showing up when people need hope the most.",
+        type: "letter",
+        text: "You've chosen a life that asks for patience, compassion, and courage every single day.",
         background: {
             from: "#F8FAFC",
             to: "#EEF6FF",
@@ -55,7 +56,8 @@ const story = [
 
     {
         id: 7,
-        text: "The one who reminds people that healing begins long before the medicine does.",
+        type: "letter",
+        text: "Long after prescriptions are forgotten, people will remember how you made them feel.",
         background: {
             from: "#F6F8FF",
             to: "#EDF3FF",
@@ -64,7 +66,8 @@ const story = [
 
     {
         id: 8,
-        text: "May this new year of your life bring you the same kindness, peace and joy you've shared with so many others.",
+        type: "letter",
+        text: "Never lose that quiet kindness. The world will always need more of it.",
         background: {
             from: "#FFF8F6",
             to: "#FFF0E8",
@@ -73,7 +76,8 @@ const story = [
 
     {
         id: 9,
-        text: "May your dreams grow, your purpose deepen, and your smile never fade.",
+        type: "letter",
+        text: "May this new year bring you moments of rest, reasons to smile and dreams worth chasing.",
         background: {
             from: "#FFFDF6",
             to: "#FFF6E8",
@@ -82,7 +86,7 @@ const story = [
 
     {
         id: 10,
-        text: "Happy Birthday, Dr. Mark.",
+        type: "birthday",
         background: {
             from: "#F8FCFF",
             to: "#EDF7FF",
@@ -91,7 +95,7 @@ const story = [
 
     {
         id: 11,
-        text: "With admiration.\n\n— BiYo",
+        type: "signature",
         background: {
             from: "#FFFFFF",
             to: "#F8FAFC",
