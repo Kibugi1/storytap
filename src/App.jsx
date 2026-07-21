@@ -5,6 +5,7 @@ import StoryCard from "./components/StoryCard";
 import story from "./data/story";
 import PulseIndicator from "./components/PulseIndicator";
 import Background from "./components/Background";
+import BrandCard from "./components/BrandCard";
 
 export default function App() {
   const [currentScene, setCurrentScene] = useState(0);
@@ -51,10 +52,10 @@ export default function App() {
     };
   }, [currentScene, isTransitioning]);
 
+  const scene = story[currentScene];
+
   return (
-    <Background
-      background={story[currentScene].background}
-    >
+    <Background background={scene.background}>
       <Box
         onClick={nextScene}
         sx={{
@@ -68,11 +69,16 @@ export default function App() {
           cursor: isTransitioning ? "default" : "pointer"
         }}
       >
-        <StoryCard
-          scene={story[currentScene]}
-          current={currentScene}
-          total={story.length}
-        />
+        {scene.type === "brand" ? (
+          <BrandCard />
+        ) : (
+          <StoryCard
+            scene={scene}
+            current={currentScene}
+            total={story.length}
+          />
+        )}
+
         {currentScene === 0 && (
           <Box
             sx={{
